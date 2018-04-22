@@ -16,7 +16,7 @@ model.wg = 1; % disturbance in G term, 1 => no disturbance
 % the state format is: [q1; q2; q1d; q2d]
 %;
 % x0 = [deg2rad(0); deg2rad(0); deg2rad(0); deg2rad(0)];
-x0 = [deg2rad(180); deg2rad(0); deg2rad(0); deg2rad(0)];
+x0 = [deg2rad(0); deg2rad(0); deg2rad(0); deg2rad(0)];
 
 %%%% Define time span for simulation
 % e.g. tspan = [0 10]; => for simulation from t=0 to t=10 seconds. 

@@ -24,7 +24,7 @@ function tau = controlLaw_PD(t,model,x)
     [M, C, G, F] = RRPlanarManipulatorEquation(model, x);
     
     % (4) create the overall controller and apply to tau
-    tau = G - Kd*qd + Kp*(q_d - q);% + F*qd + C*qd;
+    tau = G + Kd*(qd_d - qd) + Kp*(q_d - q);% + F*qd + C*qd;
 %     tau = G + F * qd + C * qd + Kp * (q_d - q) - Kd * qd;
 %     tau = M*(qdd_d - Kd*(qd) + Kp*(q_d - q)) + C*qd + F*qd + G;
 
