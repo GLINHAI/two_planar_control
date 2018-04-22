@@ -24,8 +24,8 @@ tspan = [0 15];
 %%%% Control law switching
 %
 % controlLaw = 'Passive';
-controlLaw = 'PD';
-%controlLaw = 'ComputedTorque';
+% controlLaw = 'PD';
+controlLaw = 'ComputedTorque';
 %controlLaw = 'JacobianTranspose';
 
 
