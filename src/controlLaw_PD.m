@@ -16,8 +16,7 @@ function tau = controlLaw_PD(t,model,x)
     
     % (2) Define the diagonal matrix for Kp and Kd, 
     %     choose your own gains
-    entryp = 20000;
-    Kp = diag([entryp, entryp]);
+    Kp = diag([20000, 20000]);
     Kd = diag([50, 200]);
 
     % (3) Get the gravity term using the function
